@@ -19,6 +19,18 @@
               "index",
               "installation"
             ]
+          },
+          {
+            "group": "Configurações Gerais",
+            "pages": [
+              "general"
+            ]
+          },
+          {
+            "group": "Tutoriais",
+            "pages": [
+
+            ]
           }
         ]
       }
