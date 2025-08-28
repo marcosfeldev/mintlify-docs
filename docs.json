@@ -29,7 +29,8 @@
           {
             "group": "Tutoriais",
             "pages": [
-              "tutoriais/whitelist"
+              "tutoriais/whitelist",
+              "tutoriais/tickets"
             ]
           }
         ]
