@@ -1,0 +1,43 @@
+---
+title: "Configurando liberação direta"
+description: "Neste guia, mostraremos como configurar o sistema de liberação direta."
+icon: "key"
+---
+
+<Warning>
+Antes de iniciar a configuração da liberação direta, certifique que o seu BOT está conectado com o banco de dados [clicando aqui](../general/banco-de-dados).
+</Warning>
+
+## Iniciando a configuração
+
+1. Digite o comando `/config-liberacao` em um canal seguro do seu servidor.
+2. No menu que foi criado, selecione a opção **Configurar Banco de Dados**.
+3. Preencha os campos com o nome da **tabela de liberação** do seu banco de dados, nome da coluna de **id/steam/CITIZEN_ID** e o **tipo de liberação** da sua base.
+
+## Como identificar a tabela correta
+
+A tabela certa é onde estão os jogadores da sua cidade. Ela precisa ter uma coluna chamada `whitelist` (ou algo parecido). As outras colunas podem ser **discord, id, steam, license** e etc.
+No exemplo abaixo, minha tabela é `summerz_accounts`: 
+
+<Frame>
+  ![whitelist](/images/shared/whitelist/whitelist-2.jpg)
+</Frame>
+
+## Como identificar o tipo de liberação
+
+Basta verificar o que sua base pede quando o jogador entrar no servidor:
+
+**se pedir ID**, preencha com `id` <br/>**se pedir SteamHex**, preencha com `steam` <br/>**se pedir CITIZEN_ID**, preencha com `CITIZEN_ID`
+
+No exemplo abaixo, a minha base solicita `Steam Hex`:
+
+<Frame>
+  ![whitelist](/images/shared/get_liberation/liberation-1.jpg)
+</Frame>
+
+---
+
+<Tip>
+  Precisa de ajuda? Fale com a nossa equipe pelo [WhatsApp](LINK) ou entre no nosso [Discord](https://discord.gg/NvdwFuSUD9).  
+  Estamos prontos para tirar todas as suas dúvidas!
+</Tip>

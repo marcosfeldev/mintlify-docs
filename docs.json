@@ -30,7 +30,8 @@
             "group": "Tutoriais",
             "pages": [
               "tutoriais/whitelist",
-              "tutoriais/tickets"
+              "tutoriais/tickets",
+              "tutoriais/liberacao-direta"
             ]
           }
         ]
