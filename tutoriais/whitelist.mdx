@@ -8,12 +8,100 @@ icon: "align-left"
 Antes de iniciar a configuração da whitelist, certifique que o seu BOT está conectado com o banco de dados [clicando aqui](../general/banco-de-dados).
 </Warning>
 
+## Iniciando a configuração
+
 1. Digite o comando `/config-whitelist` em um canal seguro do seu servidor.
 2. No menu que foi criado, selecione a opção **Configurar Banco de Dados**.
-3. Preencha os campos com o nome da tabela do seu banco de dados, nome da coluna de ID/SteamHex/Citizen_ID e o tipo de liberação da sua base.
+3. Preencha os campos com o nome da **tabela de liberação** do seu banco de dados, nome da coluna de **id/steam/CITIZEN_ID** e o **tipo de liberação** da sua base.
 
+## Como identificar a tabela correta
 
+A tabela certa é onde estão os jogadores da sua cidade. Ela precisa ter uma coluna chamada `whitelist` (ou algo parecido). As outras colunas podem ser **discord, id, steam, license** e etc.
+No exemplo abaixo, minha tabela é `summerz_accounts`: 
 
+<Frame>
+  ![whitelist](/images/shared/whitelist/whitelist-2.jpg)
+</Frame>
+
+## Como identificar o tipo de liberação
+
+Basta verificar o que sua base pede quando o jogador entrar no servidor:
+
+**se pedir ID**, preencha com `id` <br/>**se pedir SteamHex**, preencha com `steam` <br/>**se pedir CITIZEN_ID**, preencha com `CITIZEN_ID`
+
+No exemplo abaixo, a minha base solicita `Steam Hex`:
+
+<Frame>
+  ![whitelist](/images/shared/whitelist/whitelist-1.jpg)
+</Frame>
+
+## Adicionando perguntas na whitelist
+
+Para **criar as perguntas**, preencheremos duas etapas conforme mostrado na imagem:
+
+1. Digite sua **pergunta**
+<br/>Exemplo: `Qual é sua experiência com FiveM?`
+
+2. Alternativas e resposta correta
+<br/>Exemplo: 
+<br/>`a: Resposta Correta`
+<br/>`b: Resposta Incorreta`
+<br/>`c: Resposta Incorreta`
+<br/>`d: Resposta Incorreta`
+
+<Warning>
+As respostas **sempre** devem ser escritas após os dois pontos `:`
+</Warning>
+
+<Frame>
+  ![whitelist](/images/shared/whitelist/whitelist-3.jpg)
+</Frame>
+
+## Configurar canais de Log - Whitelist
+
+Nesta etapa vamos estar configurando os canais de log da nossa whitelist.
+- Primeiro vamos copiar o `ID` do canal de **aprovados** e **reprovados**.
+<br/>[(Como copiar ID do canal)](LINK)
+
+- Após copiar o `ID` do canal, vamos colar em suas respectivas caixas conforme mostrado na imagem abaixo
+
+<Frame>
+  ![whitelist](/images/shared/whitelist/whitelist-4.jpg)
+</Frame>
+
+## Configurações gerais - Whitelist
+
+Vamos setar as configurações gerais da whitelist.
+
+- Primeiro vamos copiar o `ID` da categoria whitelist. [(Como copiar ID da categoria)](LINK)
+
+- Com o `ID` da categoria whitelist copiado, insira o `ID` em **ID da categoria Whitelist**.
+
+- Digite a quantidade **mínima** de acertos das perguntas que configuramos anteriormente.
+
+- Embaixo, configure o tempo limite que cada pergunta deve ter.
+
+- Por último, basta inserir o `ID` do cargo que será atribuído aos usuários que forem aprovados. [(Como copiar ID do cargo)](LINK)
+
+<Frame>
+  ![whitelist](/images/shared/whitelist/whitelist-5.jpg)
+</Frame>
+
+## Configurar Embed - Whitelist
+
+Por último, vamos configurar a embed da whitelist.
+
+- Vamos primeiro inserir o texto que será exibido na embed da whitelist.
+
+- Após isso, inserir a URL da imagem da embed. [(Como copiar URL da imagem)](LINK)
+
+<Info>
+Caso queira deixar padrão, deixe o campo vazio.
+</Info>
+
+<Frame>
+  ![whitelist](/images/shared/whitelist/whitelist-6.jpg)
+</Frame>
 
 <Tip>
   Precisa de ajuda? Fale com a nossa equipe pelo [WhatsApp](LINK) ou entre no nosso [Discord](https://discord.gg/NvdwFuSUD9).  
