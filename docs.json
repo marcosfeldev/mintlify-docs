@@ -31,7 +31,8 @@
             "pages": [
               "tutoriais/whitelist",
               "tutoriais/tickets",
-              "tutoriais/liberacao-direta"
+              "tutoriais/liberacao-direta",
+              "tutoriais/connect"
             ]
           }
         ]
