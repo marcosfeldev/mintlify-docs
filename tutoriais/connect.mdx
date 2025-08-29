@@ -4,17 +4,13 @@ description: "Neste guia, mostraremos como configurar o sistema de connect."
 icon: "connectdevelop"
 ---
 
-<Warning>
-Antes de iniciar a configuração da liberação direta, certifique que o seu BOT está conectado com o banco de dados [clicando aqui](../general/banco-de-dados).
-</Warning>
-
 ## Iniciando a configuração
 
 1. Digite o comando `/config-connect` em um canal seguro do seu servidor.
 
 ## Configurando o sistema de connect
 
-Insira o `ID` do canal de connect.
+Insira o `ID` do canal onde estará a mensagem de connect.
 
 <Frame>
   ![connect](/images/shared/get_connect/connect-1.jpg)
@@ -22,27 +18,34 @@ Insira o `ID` do canal de connect.
 
 ## Configurando IP do servidor + porta
 
-Insira o **IP:Porta** do servidor.
+Insira o **IP:Porta** do servidor. Por padrão, as portas geralmente são: **30120**.
 
-<Info>
-Por padrão, as portas geralmente são: 30120.
-</Info>
+<Warning>
+  Utilize o formato corretamente: **127.0.0.1:30120**
+</Warning>
 
 <Frame>
   ![connect](/images/shared/get_connect/connect-2.jpg)
 </Frame>
 
-## Configurando o código CFX do seu servidor
+## Configurando o código cfx.re do seu servidor
 
-Insira o seu código **CFX**.
+Insira o seu código **cfx.re**. Geralmente você consegue esse código do lado direito da tela no seu servidor dentro do FiveM como no exemplo abaixo:
+
+<Info>
+Insira somente o código.
+</Info>
 
 <Frame>
   ![connect](/images/shared/get_connect/connect-3.jpg)
 </Frame>
 
-## Configurando link personalizado do connect
+<Frame>
+  ![connect](/images/shared/get_connect/connect-9.png)
+</Frame>
 
-Insira seu link personalizado, caso possua.
+## Configurando link personalizado do connect
+Caso você tenha um link personalizado como `seuservidor.com.br`, basta inserir ele na opção de **link personalizado**.
 
 <Frame>
   ![connect](/images/shared/get_connect/connect-4.jpg)
@@ -50,8 +53,7 @@ Insira seu link personalizado, caso possua.
 
 ## Alterando o ícone do botão Connect
 
-Insira o ícone de sua preferência, caso possua.
-<br/>Deixe vazio, caso queira deixar padrão: 🎮
+Insira o ícone de sua preferência ou deixe o campo em branco para usar o padrão: `🎮`
 
 <Frame>
   ![connect](/images/shared/get_connect/connect-5.jpg)
@@ -59,8 +61,7 @@ Insira o ícone de sua preferência, caso possua.
 
 ## Adicionando imagem do sistema de Connect
 
-Para adicionar uma imagem, basta colar a URL da imagem de sua preferência.
-<br/>[(Como copiar URL da imagem)](../general/imagens)
+Para adicionar uma imagem, cole a URL da imagem desejada. [(Como inserir imagem personalizada)](../general/imagens)
 
 <Frame>
   ![connect](/images/shared/get_connect/connect-6.jpg)
@@ -68,7 +69,7 @@ Para adicionar uma imagem, basta colar a URL da imagem de sua preferência.
 
 ## Configurando nome do servidor Connect
 
-Insira o nome do servidor connect de sua preferência.
+Insira o nome do seu servidor. Exemplo: `Coding Roleplay`
 
 <Frame>
   ![connect](/images/shared/get_connect/connect-7.jpg)
@@ -76,16 +77,14 @@ Insira o nome do servidor connect de sua preferência.
 
 ## Configurando exibição de número de jogadores
 
-Defina se quer mostrar o número de jogadores online no seu servidor:
-<br/>**1** = Sim
-<br/>**0** = Não
+Escolha se deseja exibir o número de jogadores online no seu servidor: **1** = Sim, **0** = Não.
 
 <Frame>
   ![connect](/images/shared/get_connect/connect-8.jpg)
 </Frame>
 
 <Note>
-Após configurar, basta ir até o canal desejado e digitar `/send-connect`.
+Depois de configurar, digite /send-connect em qualquer canal e a mensagem será enviada no canal configurado.
 </Note>
 
 ---

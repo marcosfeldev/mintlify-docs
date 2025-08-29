@@ -16,7 +16,7 @@ Antes de iniciar a configuração da liberação direta, certifique que o seu BO
 
 ## Como identificar a tabela correta
 
-A tabela certa é onde estão os jogadores da sua cidade. Ela precisa ter uma coluna chamada `whitelist` (ou algo parecido). As outras colunas podem ser **discord, id, steam, license** e etc.
+A tabela certa é onde os jogadores da sua cidade estão sendo liberados. Ela precisa ter uma coluna chamada `whitelist` (ou algo parecido). As outras colunas podem ser **discord, id, steam, license** e etc.
 No exemplo abaixo, minha tabela é `summerz_accounts`: 
 
 <Frame>
@@ -32,13 +32,17 @@ Basta verificar o que sua base pede quando o jogador entrar no servidor:
 No exemplo abaixo, a minha base solicita `Steam Hex`:
 
 <Frame>
+  ![liberacao](/images/shared/get_liberation/liberation-4.jpg)
+</Frame>
+
+Por esse motivo, eu preencho o tipo de liberação como `steam`.
+
+<Frame>
   ![liberacao](/images/shared/get_liberation/liberation-1.jpg)
 </Frame>
 
-## Definindo canal de connect do servidor
-
-1. Localize o canal de connect.
-2. Clique com botão direto e copie o `ID` do canal. [(Como copiar ID do canal)](../general/conseguir-canais)
+## Definindo canal de connect do seu servidor
+Localize o canal de connect do seu servidor, clique com botão direto e copie o `ID` do canal. [(Como copiar ID do canal)](../general/conseguir-canais)
 
 <Frame>
   ![liberacao](/images/shared/get_liberation/liberation-2.jpg)
@@ -46,18 +50,21 @@ No exemplo abaixo, a minha base solicita `Steam Hex`:
 
 ## Configurando mensagem da Embed de liberação
 
-Adicione uma descrição de sua preferência para a embed de liberação.
-<br/>Caso queira deixar o padrão da **Coding**, deixe o campo vazio.
+Adicione uma descrição de sua preferência para a embed de liberação. 
 
-Para adicionar uma imagem, basta colar a URL da imagem de sua preferência.
-<br/>[(Como copiar URL da imagem)](../general/imagens)
+<Info>
+Caso queira deixar o padrão da **Coding**, deixe o campo vazio.
+</Info>
+
+Para adicionar uma imagem personalizada, basta inserir o link da imagem de sua preferência.
+<br/>[(Como copiar link de uma imagem personalizada)](../general/imagens)
 
 <Frame>
   ![liberacao](/images/shared/get_liberation/liberation-3.jpg)
 </Frame>
 
 <Note>
-Após configurar, basta ir até o canal desejado e digitar `/send-liberacao`.
+Após configurar, vá ao canal de liberação e digite `/send-liberacao`.
 </Note>
 
 ---
